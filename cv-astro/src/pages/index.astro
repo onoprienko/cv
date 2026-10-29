@@ -1,6 +1,10 @@
 ---
 import '../styles/global.css';
 import Header from './components/Header.astro';
+import Heading from './components/Heading.astro';
+import ExperienceItem from './components/ExperienceItem.astro';
+import DataLocationUser from './components/icons/reference/DataLocationUser.astro';
+import { experiences } from '../content/experiences';
 ---
 
 <html lang="en">
@@ -14,5 +18,21 @@ import Header from './components/Header.astro';
   </head>
   <body>
     <Header />
+    <section>
+      <Heading text={'Summary'} />
+      <p>
+        Experienced front-end developer with over 10 years of expertise in
+        building responsive, visually appealing, and user-friendly websites.
+        Passionate about creating seamless digital experiences that combine
+        functionality with outstanding design.
+      </p>
+      <p><i>Languages:</i> English, Ukrainian</p>
+    </section>
+    <section>
+      <Heading text={'Experience'} />
+      {experiences.map((exp) => <ExperienceItem exp={exp} />)}
+    </section>
+
+    <DataLocationUser />
   </body>
 </html>

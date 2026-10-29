@@ -10,15 +10,15 @@ import Github from './icons/Github.astro';
     <div class="subtitle">Front End Developer</div>
     <div class="links">
       <a href="mailto:onoprienko.vit@gmail.com" target="_blank">
-        <Mail class="icon-sm" />
+        <Mail class="icon" />
         onoprienko.vit@gmail.com
       </a>
       <a href="https://wa.me/380501863500" target="_blank">
-        <Whatsapp class="icon-sm" />
+        <Whatsapp class="icon" />
         + 38 050 186 3500
       </a>
       <a href="https://github.com/onoprienko" target="_blank">
-        <Github class="icon-sm" />
+        <Github class="icon" />
         github.com/onoprienko
       </a>
     </div>
@@ -31,7 +31,7 @@ import Github from './icons/Github.astro';
     line-height: 1;
   }
   .subtitle {
-    color: #c7c7c7;
+    color: var(--color-text-secondary);
     font-size: 1.3rem;
   }
   .links {
@@ -45,9 +45,8 @@ import Github from './icons/Github.astro';
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
   }
-  .icon-sm {
+  .icon {
     width: 1rem;
     height: 1rem;
     margin-right: 0.8rem;
