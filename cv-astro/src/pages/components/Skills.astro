@@ -1,0 +1,20 @@
+---
+import { skills } from '../../content/skills';
+---
+
+<ul>
+  {skills.map((skill) => <li>{skill}</li>)}
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    display: inline-block;
+    padding: 4px;
+    border-bottom: 2px solid #e6e6e6;
+    margin: 0 16px 6px 0;
+  }
+</style>

@@ -4,6 +4,8 @@ import Header from './components/Header.astro';
 import Heading from './components/Heading.astro';
 import ExperienceItem from './components/ExperienceItem.astro';
 import DataLocationUser from './components/icons/reference/DataLocationUser.astro';
+import Education from './components/Education.astro';
+import Skills from './components/Skills.astro';
 import { experiences } from '../content/experiences';
 ---
 
@@ -31,6 +33,14 @@ import { experiences } from '../content/experiences';
     <section>
       <Heading text={'Experience'} />
       {experiences.map((exp) => <ExperienceItem exp={exp} />)}
+    </section>
+    <section>
+      <Heading text={'Education'} />
+      <Education />
+    </section>
+    <section>
+      <Heading text={'Skills'} />
+      <Skills />
     </section>
 
     <DataLocationUser />
