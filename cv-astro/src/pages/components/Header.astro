@@ -1,0 +1,55 @@
+---
+import Mail from './icons/Mail.astro';
+import Whatsapp from './icons/Whatsapp.astro';
+import Github from './icons/Github.astro';
+---
+
+<header>
+  <div class="head-info">
+    <h1 class="title">Onopriienko Vitalii</h1>
+    <div class="subtitle">Front End Developer</div>
+    <div class="links">
+      <a href="mailto:onoprienko.vit@gmail.com" target="_blank">
+        <Mail class="icon-sm" />
+        onoprienko.vit@gmail.com
+      </a>
+      <a href="https://wa.me/380501863500" target="_blank">
+        <Whatsapp class="icon-sm" />
+        + 38 050 186 3500
+      </a>
+      <a href="https://github.com/onoprienko" target="_blank">
+        <Github class="icon-sm" />
+        github.com/onoprienko
+      </a>
+    </div>
+  </div>
+</header>
+<style>
+  .title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .subtitle {
+    color: #c7c7c7;
+    font-size: 1.3rem;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 1.6rem 0;
+    flex-wrap: wrap;
+  }
+  .links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  .icon-sm {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.8rem;
+  }
+</style>
