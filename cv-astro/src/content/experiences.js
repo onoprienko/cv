@@ -2,11 +2,12 @@ export const experiences = [
   {
     title: 'Front End Developer (Shopify)',
     company: 'Ask Phill',
+    companyUrl: 'https://www.linkedin.com/company/ask-phill/',
     employees: '60+',
     dateStart: '12.2022',
     dateEnd: '12.2024',
     location: 'Puerto de la Cruz, Spain (remote)',
-    companySlogan: 'Award-winning Shopify Plus partner, based in Amsterdam',
+    companySlogan: 'Award-winning Shopify Plus agency, based in Amsterdam',
     responsibilities: [
       'Collaborate with a team of developers to streamline development timelines and improve efficiency',
       'Create custom Shopify themes optimized to specific client needs',
@@ -17,6 +18,7 @@ export const experiences = [
   {
     title: 'Front End Developer (Shopify)',
     company: 'DigitalSuits',
+    companyUrl: 'https://www.linkedin.com/company/digitalsuits/',
     employees: '50+',
     dateStart: '06.2022',
     dateEnd: '05.2023',
@@ -32,6 +34,7 @@ export const experiences = [
   {
     title: 'Front End Developer',
     company: 'Promodo',
+    companyUrl: 'https://www.linkedin.com/company/promodo/posts/?feedView=all',
     employees: '400+',
     dateStart: '12.2021',
     dateEnd: '05.2022',
@@ -48,6 +51,8 @@ export const experiences = [
   {
     title: 'Front End Developer (Shopify)',
     company: 'Product Design Academy',
+    companyUrl:
+      'https://www.linkedin.com/company/product-design-academy/posts/?feedView=all',
     employees: '5-10',
     dateStart: '06.2020',
     dateEnd: '01.2021',
@@ -63,6 +68,8 @@ export const experiences = [
   {
     title: 'Front End Developer (Shopify)',
     company: 'Motion Design School',
+    companyUrl:
+      'https://www.linkedin.com/school/motiondesignschool/posts/?feedView=all',
     employees: '30+',
     dateStart: '09.2018',
     dateEnd: '06.2020',
@@ -79,6 +86,7 @@ export const experiences = [
   {
     title: 'Full Stack Developer',
     company: 'Insite Group Ukraine',
+    companyUrl: '',
     employees: '5-10',
     dateStart: '10.2015',
     dateEnd: '07.2016',
@@ -96,6 +104,8 @@ export const experiences = [
   {
     title: 'Front End Developer',
     company: 'Spalah IT-School',
+    companyUrl:
+      'https://www.linkedin.com/company/spalah-it-school/posts/?feedView=all',
     employees: '20+',
     dateStart: '09.2014',
     dateEnd: '08.2015',
