@@ -1,0 +1,67 @@
+@import '../../node_modules/reset-css/reset.css';
+
+:root {
+  font-size: 10px;
+  --color-text-main: #fff;
+  --color-text-secondary: #c7c7c7;
+  --color-background-top: rgb(27, 39, 53);
+  --color-background-bottom: rgb(9, 10, 15);
+  --color-control-background: rgba(255, 255, 255, 0.08);
+  --color-control-border: rgba(255, 255, 255, 0.35);
+}
+
+:root[data-theme='white'] {
+  --color-text-main: #000;
+  --color-text-secondary: #565656;
+  --color-background-top: #fff;
+  --color-background-bottom: #f3f3f3;
+  --color-control-background: rgba(0, 0, 0, 0.04);
+  --color-control-border: rgba(0, 0, 0, 0.3);
+}
+
+@font-face {
+  font-family: DINPro;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../assets/fonts/DINProRegular.woff2) format('woff2');
+}
+@font-face {
+  font-family: DINPro;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url(../assets/fonts/DINProBold.woff2) format('woff2');
+}
+
+@media print {
+  [data-noprint] * {
+    display: none;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: DINPro, sans-serif;
+  overflow-x: hidden;
+  color: var(--color-text-main);
+  background: radial-gradient(
+    at center top,
+    var(--color-background-top) 0px,
+    var(--color-background-bottom) 100%
+  );
+  min-height: 100vh;
+}
+
+a {
+  color: var(--color-text-main);
+}
+
+.layout {
+  max-width: 1200px;
+  padding: 0 3rem;
+  margin: 0 auto;
+}

@@ -1,0 +1,143 @@
+---
+
+---
+
+<div class="stars-bg-holder"></div>
+<div class="stars-holder" data-noprint>
+  <div class="stars-wrap">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+</div>
+
+<style>
+  #stars {
+    width: 1px;
+    height: 1px;
+    background: 0 0;
+    box-shadow: 747px 84px var(--color-text-main);
+    animation: animStar 50s linear infinite;
+  }
+  #stars:after {
+    content: ' ';
+    position: absolute;
+    top: -2000px;
+    width: 1px;
+    height: 1px;
+    background: 0 0;
+    box-shadow: 747px 84px var(--color-text-main);
+  }
+  #stars2 {
+    width: 2px;
+    height: 2px;
+    background: 0 0;
+    box-shadow: 1166px 593px var(--color-text-main);
+    animation: animStar 100s linear infinite;
+  }
+  #stars2:after {
+    content: ' ';
+    position: absolute;
+    top: -2000px;
+    width: 2px;
+    height: 2px;
+    background: 0 0;
+    box-shadow: 1166px 593px var(--color-text-main);
+  }
+  #stars3 {
+    width: 3px;
+    height: 3px;
+    background: 0 0;
+    box-shadow: 336px 458px var(--color-text-main);
+    animation: animStar 150s linear infinite;
+  }
+  #stars3:after {
+    content: ' ';
+    position: absolute;
+    top: -2000px;
+    width: 3px;
+    height: 3px;
+    background: 0 0;
+    box-shadow: 336px 458px var(--color-text-main);
+  }
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(2000px);
+    }
+  }
+
+  :root {
+    --color-text-main: #fff;
+    --color-background-top: rgb(27, 39, 53);
+    --color-background-bottom: rgb(9, 10, 15);
+  }
+
+  .stars-holder {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+  }
+  .stars-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 3840px;
+  }
+  .stars-bg-holder {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(
+      at center top,
+      var(--color-background-top) 0px,
+      var(--color-background-bottom) 100%
+    );
+  }
+
+  #stars.stars-generated,
+  #stars.stars-generated::after,
+  #stars2.stars-generated,
+  #stars2.stars-generated::after,
+  #stars3.stars-generated,
+  #stars3.stars-generated::after {
+    box-shadow: var(--star-shadow);
+  }
+</style>
+
+<script>
+  const STAR_FIELD_WIDTH = 1920 * 2;
+  const STAR_FIELD_HEIGHT = 2000 * 2;
+
+  const starLayers = [
+    { id: 'stars', count: 700 * 5 },
+    { id: 'stars2', count: 200 * 3 },
+    { id: 'stars3', count: 100 * 2 },
+  ] as const;
+
+  function generateStarShadow(count: number): string {
+    return Array.from({ length: count }, () => {
+      const x = Math.floor(Math.random() * STAR_FIELD_WIDTH);
+      const y = Math.floor(Math.random() * STAR_FIELD_HEIGHT);
+      return `${x}px ${y}px var(--color-text-main)`;
+    }).join(', ');
+  }
+
+  for (const layer of starLayers) {
+    const element = document.getElementById(layer.id);
+
+    if (!(element instanceof HTMLElement)) {
+      throw new Error(`Could not find the #${layer.id} star layer.`);
+    }
+
+    element.style.setProperty('--star-shadow', generateStarShadow(layer.count));
+    element.classList.add('stars-generated');
+  }
+</script>

@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+import { certifications } from '../content/certifications';
+import ImageUOH from '../assets/University of Helsinki.jpg';
+import ImageKaggle from '../assets/kaggle.jpg';
+---
+
+<ul>
+  {
+    certifications.map((item) => (
+      <li class="cert">
+        <a href={item.link} target="_blank">
+          <Image
+            width={44}
+            height={44}
+            class="logo"
+            src={item.issuer === 'Kaggle' ? ImageKaggle : ImageUOH}
+            alt={item.issuer}
+          />
+          <div>
+            <div class="title">{item.title}</div>
+            <div class="issuer">{item.issuer}</div>
+          </div>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    gap: 1.6rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .title {
+    line-height: 1.4;
+  }
+  .issuer {
+    color: var(--color-text-secondary);
+    font-size: 1.4rem;
+  }
+</style>

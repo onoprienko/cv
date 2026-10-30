@@ -1,0 +1,15 @@
+---
+const { text, class: className, ...props } = Astro.props;
+---
+
+<h2>{text}</h2>
+
+<style>
+  h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--color-text-main);
+    margin-bottom: 4rem;
+  }
+</style>
