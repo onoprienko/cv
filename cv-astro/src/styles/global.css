@@ -39,3 +39,9 @@ body {
 a {
   color: var(--color-text-main);
 }
+
+.layout {
+  max-width: 1200px;
+  padding: 0 3rem;
+  margin: 0 auto;
+}

@@ -1,55 +1,59 @@
 ---
-// TODO: instead use copy of styles of ExperienceItem component use some other approach
+import { Image } from 'astro:assets';
+import ImageNFAU from '../../assets/NFAU.jpg';
 ---
 
-<div class="exp">
-  <h3 class="title">Bachelor Pharmacist</h3>
-  <div class="subtitle">National University of Pharmacy Ukraine</div>
-  <div class="info">
-    <div class="date">
-      <svg fill="currentColor"><use href="#date"></use></svg> 2006-2012
+<div class="education">
+  <Image
+    width={66}
+    height={66}
+    class="logo"
+    src={ImageNFAU}
+    alt="National University of Pharmacy"
+  />
+  <div class="text">
+    <h3 class="title">National University of Pharmacy</h3>
+    <div class="subtitle">
+      Master's degree, Pharmacy, Pharmaceutical Sciences, and Administration
+    </div>
+    <div class="info">
+      <div class="date">
+        <svg fill="currentColor"><use href="#date"></use></svg> 2006 - 2012
+      </div>
     </div>
   </div>
 </div>
 
 <style>
-  .exp {
-    margin-top: 2.4rem;
-    padding-bottom: 2.4rem;
-    border-bottom: 1px dashed var(--color-text-secondary);
+  .education {
+    display: flex;
+    gap: 2rem;
   }
-  .exp:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .logo {
+    border-radius: 50%;
   }
   .title {
-    font-size: 1.4rem;
-    margin: 0;
-    line-height: 1.1;
-    font-weight: 400;
+    font-size: 2rem;
   }
   .subtitle {
-    color: var(--color-text-secondary);
+    font-size: 1.4rem;
     line-height: 1.2;
+    color: var(--color-text-secondary);
   }
-  .subtitle svg {
-    width: 1rem;
-    height: 1rem;
-  }
+
   .info {
     display: flex;
-    margin: 0.8rem 0 1.6rem;
-    font-size: 0.8em;
-  }
-  .info > * {
-    margin-right: 2.8rem;
-  }
-  .info > :last-child {
-    margin-right: 0;
+    font-size: 1.4rem;
+    gap: 4rem;
   }
   .info svg {
     width: 1rem;
     height: 1rem;
-    margin-right: 0.4rem;
+    margin-right: 0.8rem;
   }
 </style>

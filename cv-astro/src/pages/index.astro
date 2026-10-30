@@ -6,6 +6,8 @@ import ExperienceItem from './components/ExperienceItem.astro';
 import DataLocationUser from './components/icons/reference/DataLocationUser.astro';
 import Education from './components/Education.astro';
 import Skills from './components/Skills.astro';
+import Certifications from './components/Certifications.astro';
+import Summary from './components/Summary.astro';
 import { experiences } from '../content/experiences';
 ---
 
@@ -19,30 +21,59 @@ import { experiences } from '../content/experiences';
     <title>Astro</title>
   </head>
   <body>
-    <Header />
-    <section>
-      <Heading text={'Summary'} />
-      <p>
-        Experienced front-end developer with over 10 years of expertise in
-        building responsive, visually appealing, and user-friendly websites.
-        Passionate about creating seamless digital experiences that combine
-        functionality with outstanding design.
-      </p>
-      <p><i>Languages:</i> English, Ukrainian</p>
-    </section>
-    <section>
-      <Heading text={'Experience'} />
-      {experiences.map((exp) => <ExperienceItem exp={exp} />)}
-    </section>
-    <section>
-      <Heading text={'Education'} />
-      <Education />
-    </section>
-    <section>
-      <Heading text={'Skills'} />
-      <Skills />
-    </section>
+    <div class="layout">
+      <Header />
+      <div class="container">
+        <div class="main">
+          <section>
+            <Heading text={'Summary'} />
+            <Summary />
+          </section>
+          <section>
+            <Heading text={'Experience'} />
+            {experiences.map((exp) => <ExperienceItem exp={exp} />)}
+          </section>
+        </div>
 
-    <DataLocationUser />
+        <div class="sidebar">
+          <section>
+            <Heading text={'Education'} />
+            <Education />
+          </section>
+          <section>
+            <Heading text={'Certifications'} />
+            <Certifications />
+          </section>
+          <section>
+            <Heading text={'Skills'} />
+            <Skills />
+          </section>
+        </div>
+      </div>
+
+      <DataLocationUser />
+    </div>
   </body>
 </html>
+
+<style>
+  .container {
+    display: flex;
+    gap: 8rem;
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .sidebar {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+</style>

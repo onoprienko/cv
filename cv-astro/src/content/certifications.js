@@ -1,0 +1,68 @@
+export const certifications = [
+  {
+    title: 'Full Stack Open: Next.js',
+    issuer: 'University of Helsinki',
+    link: 'https://courses.mooc.fi/certificates/validate/2caq6qy2rptu4yk',
+    skills: ['Next.js', 'Drizzle ORM'],
+  },
+  {
+    title: 'Full Stack Open: Relational Databases',
+    issuer: 'University of Helsinki',
+    link: 'https://courses.mooc.fi/certificates/validate/svvtpxvx6b7jcf9',
+    skills: ['PostgreSQL', 'Sequelize.js', 'SQL', 'umzug'],
+  },
+  {
+    title: 'Python',
+    issuer: 'Kaggle',
+    link: 'https://www.kaggle.com/learn/certification/vitaliionopriienko/python',
+    skills: ['Python'],
+  },
+  {
+    title: 'Full Stack Open: Containers',
+    issuer: 'University of Helsinki',
+    link: 'https://courses.mooc.fi/certificates/validate/zpg4uhvrh2shbts',
+    skills: ['Docker', 'Containerization'],
+  },
+  {
+    title: 'Full Stack Open: React Native',
+    issuer: 'University of Helsinki',
+    link: 'https://courses.mooc.fi/certificates/validate/9k9jm7rcajkfss4',
+    skills: ['React Native', 'Android Studio', 'Yup', 'Apollo', 'Jest'],
+  },
+  {
+    title: 'Full Stack Open: GraphQL',
+    issuer: 'University of Helsinki',
+    link: 'https://courses.mooc.fi/certificates/validate/3dk8tpt4sfht8id',
+    skills: ['GraphQL', 'Apollo GraphQL'],
+  },
+  {
+    title: 'Full Stack Open: Continuous integration',
+    issuer: 'University of Helsinki',
+    link: 'https://courses.mooc.fi/certificates/validate/nt5urk3h8722tyx',
+    skills: ['CI/CD'],
+  },
+  {
+    title: 'Full Stack Open: TypeScript',
+    issuer: 'University of Helsinki',
+    link: 'https://courses.mooc.fi/certificates/validate/quvttqddk2bp4ga',
+    skills: ['TypeScript', 'Zod'],
+  },
+  {
+    title: 'Full Stack Open: Web Development',
+    issuer: 'University of Helsinki',
+    link: 'https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/66c4673106479b8e589cf0dca8abe64e',
+    skills: [
+      'Node.js',
+      'React.js',
+      'Vitest',
+      'Vite',
+      'esbuild',
+      'Astro',
+      'Express.js',
+      'Zustand',
+      'TanStack Query',
+      'Playwright',
+      'MongoDB',
+    ],
+  },
+];

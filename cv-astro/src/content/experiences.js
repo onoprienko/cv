@@ -8,10 +8,10 @@ export const experiences = [
     location: 'Puerto de la Cruz, Spain (remote)',
     companySlogan: 'Award-winning Shopify Plus partner, based in Amsterdam',
     responsibilities: [
-      'Collaborate with a team of developers to streamline development timelines and improve efficiency.',
-      'Create custom Shopify themes optimized to specific client needs.',
-      'Develop new features for existing Shopify stores to enhance functionality.',
-      'Tackle complex tasks and deliver solutions that meet business objectives.',
+      'Collaborate with a team of developers to streamline development timelines and improve efficiency',
+      'Create custom Shopify themes optimized to specific client needs',
+      'Develop new features for existing Shopify stores to enhance functionality',
+      'Tackle complex tasks and deliver solutions that meet business objectives',
     ],
   },
   {
@@ -24,9 +24,9 @@ export const experiences = [
     companySlogan:
       'E-commerce Experts | Web, Shopify/Plus/Hydrogen, Headless & Custom software development',
     responsibilities: [
-      'Act as an outsourced developer on various Shopify projects, delivering solid solutions.',
-      'Perform regular maintenance and optimization of Shopify stores to enhance performance and user experience.',
-      'Collaborate with clients to address business challenges and provide effective web solutions.',
+      'Act as an outsourced developer on various Shopify projects, delivering solid solutions',
+      'Perform regular maintenance and optimization of Shopify stores to enhance performance and user experience',
+      'Collaborate with clients to address business challenges and provide effective web solutions',
     ],
   },
   {
@@ -37,12 +37,12 @@ export const experiences = [
     dateEnd: '05.2022',
     location: 'Kyiv, Ukraine (remote)',
     companySlogan:
-      'A digital marketing agency that drives businesses growth by creating and implementing online marketing strategy.',
+      'A digital marketing agency that drives businesses growth by creating and implementing online marketing strategy',
     responsibilities: [
-      'Developing a new corporate website to enhance brand presence and user engagement.',
-      'Building a variety of websites and landing pages for effective marketing campaigns and lead generation.',
-      'Creating and launching several e-commerce stores, optimizing user experience and sales functionality.',
-      'Collaborating with cross-functional teams to align web development with business goals and customer needs.',
+      'Developing a new corporate website to enhance brand presence and user engagement',
+      'Building a variety of websites and landing pages for effective marketing campaigns and lead generation',
+      'Creating and launching several e-commerce stores, optimizing user experience and sales functionality',
+      'Collaborating with cross-functional teams to align web development with business goals and customer needs',
     ],
   },
   {
@@ -54,10 +54,10 @@ export const experiences = [
     location: 'Kyiv, Ukraine (remote)',
     companySlogan: 'Online courses from product design industry professionals',
     responsibilities: [
-      'Building Shopify themes from Figma mockups, ensuring responsive and pixel-perfect designs.',
-      'Developing Learning Management Systems (LMS) on Shopify theme foundation for enhanced e-learning experiences.',
-      'Performing daily code maintenance, debugging issues, and providing solutions for optimal website functionality.',
-      'Integrating frontend services like Amplitude, Google Analytics, and Klaviyo for tracking and analytics.',
+      'Building Shopify themes from Figma mockups, ensuring responsive and pixel-perfect designs',
+      'Developing Learning Management Systems (LMS) on Shopify theme foundation for enhanced e-learning experiences',
+      'Performing daily code maintenance, debugging issues, and providing solutions for optimal website functionality',
+      'Integrating frontend services like Amplitude, Google Analytics, and Klaviyo for tracking and analytics',
     ],
   },
   {
@@ -69,11 +69,11 @@ export const experiences = [
     location: 'Kharkiv, Ukraine',
     companySlogan: 'Online school of modern animation and motion design',
     responsibilities: [
-      'Developing Shopify themes based on Figma designs, ensuring responsive and functional templates.',
-      'Implementing A/B testing to optimize user experience and improve conversion rates.',
-      'Regular code maintenance, troubleshooting, and resolving issues to ensure smooth website performance.',
-      'Integrating various frontend services like Amplitude and Google Analytics for enhanced tracking and analytics.',
-      'Creating SPA prototypes to meet diverse data management needs, improving interactivity and performance.',
+      'Developing Shopify themes based on Figma designs, ensuring responsive and functional templates',
+      'Implementing A/B testing to optimize user experience and improve conversion rates',
+      'Regular code maintenance, troubleshooting, and resolving issues to ensure smooth website performance',
+      'Integrating various frontend services like Amplitude and Google Analytics for enhanced tracking and analytics',
+      'Creating SPA prototypes to meet diverse data management needs, improving interactivity and performance',
     ],
   },
   {
