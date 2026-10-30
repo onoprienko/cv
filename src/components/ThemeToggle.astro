@@ -25,6 +25,8 @@
     margin-left: auto;
     align-self: flex-start;
     white-space: nowrap;
+    position: absolute;
+    right: 6rem;
   }
   .switch {
     width: 4.4rem;
@@ -49,6 +51,12 @@
   }
   .switch[aria-checked='true'] .switch-thumb {
     transform: translateX(2rem);
+  }
+
+  @media screen and (max-width: 1139px) {
+    .theme-toggle {
+      right: 4rem;
+    }
   }
 </style>
 
