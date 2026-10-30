@@ -14,11 +14,16 @@ import { experiences } from '../content/experiences';
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Vitalii Onopriienko - Front End Developer</title>
+    <script is:inline>
+      const savedTheme = localStorage.getItem('cv-theme');
+      if (savedTheme === 'black' || savedTheme === 'white') {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
   </head>
   <body>
     <div class="layout">
