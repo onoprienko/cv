@@ -11,8 +11,8 @@ import ImageKaggle from '../assets/kaggle.jpg';
       <li class="cert">
         <a href={item.link} target="_blank">
           <Image
-            width={44}
-            height={44}
+            width={200}
+            height={200}
             class="logo"
             src={item.issuer === 'Kaggle' ? ImageKaggle : ImageUOH}
             alt={item.issuer}
@@ -47,5 +47,9 @@ import ImageKaggle from '../assets/kaggle.jpg';
   .issuer {
     color: var(--color-text-secondary);
     font-size: 1.4rem;
+  }
+  .logo {
+    width: 4.4rem;
+    height: 4.4rem;
   }
 </style>
