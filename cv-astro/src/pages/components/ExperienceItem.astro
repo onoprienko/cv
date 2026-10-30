@@ -1,15 +1,52 @@
 ---
 const { exp } = Astro.props;
 import type { Experiense } from '../../types';
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import ImageAskphill from '../../assets/askphill.jpg';
+import ImageDigitalsuits from '../../assets/digitalsuits.jpg';
+import ImagePromodo from '../../assets/promodo.jpg';
+import ImagePDA from '../../assets/PDA.jpg';
+import ImageMDS from '../../assets/MDS.jpg';
+import ImageIG from '../../assets/IG.jpg';
+import ImageSpalah from '../../assets/spalah.jpg';
+
+const companyLogos: Record<string, ImageMetadata> = {
+  'Ask Phill': ImageAskphill,
+  DigitalSuits: ImageDigitalsuits,
+  Promodo: ImagePromodo,
+  'Product Design Academy': ImagePDA,
+  'Motion Design School': ImageMDS,
+  'Insite Group Ukraine': ImageIG,
+  'Spalah IT-School': ImageSpalah,
+};
+
+const logo = companyLogos[exp.company];
 ---
 
 <div class="exp">
-  <h3 class="title">{exp.title}</h3>
-  <div class="subtitle">
-    {exp.company}
-    <svg fill="currentColor"><use href="#user"></use></svg>
-    {exp.employees}
+  <div class="head">
+    {
+      logo && (
+        <Image
+          width={66}
+          height={66}
+          class="logo"
+          src={logo}
+          alt={`${exp.company} logo`}
+        />
+      )
+    }
+    <div>
+      <h3 class="title">{exp.title}</h3>
+      <div class="subtitle">
+        {exp.company}
+        <svg fill="currentColor"><use href="#user"></use></svg>
+        {exp.employees}
+      </div>
+    </div>
   </div>
+
   <div class="info">
     <div class="date">
       <svg fill="currentColor"><use href="#date"></use></svg>
@@ -34,11 +71,16 @@ import type { Experiense } from '../../types';
     border-bottom: 1px dashed var(--color-text-secondary);
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 1rem;
   }
   .exp:last-child {
     border-bottom: none;
     padding-bottom: 0;
+  }
+  .head {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
   }
   .title {
     font-size: 2rem;
